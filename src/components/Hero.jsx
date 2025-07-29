@@ -6,18 +6,15 @@ const Hero = () => {
   const handleSearch = (e) => {
     e.preventDefault();
     console.log('Searching for:', searchQuery);
-    // Add search functionality here
   };
 
   return (
     <section className="bg-gradient-to-r from-primary-blue to-blue-700 relative overflow-hidden">
-      {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-primary-orange rounded-full -translate-x-32 -translate-y-32"></div>
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-primary-yellow rounded-full translate-x-32 translate-y-32"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center lg:my-14">
-          {/* Left side - Content */}
           <div className="text-white">
             <div className="">
               <p className="text-lg font-light text-blue-200 p-2 leading-[150%]">Software Recruitment Specialists</p>
@@ -26,7 +23,6 @@ const Hero = () => {
               </h1>
             </div>
 
-            {/* Search Form */}
             <form onSubmit={handleSearch} className="">
               <div className="flex flex-row">
                 <div className="flex-1">
@@ -48,8 +44,7 @@ const Hero = () => {
             </form>
           </div>
 
-                      {/* Right side - Image */}
-<div className="px-8 w-[100%] h-full">
+            <div className="px-8 w-[100%] h-full">
               <div className="relative h-full mt-14 lg:mt-0">
                                  <div className="w-full aspect-square rounded-2xl overflow-hidden">
                    <img src="/assets/office-lady.jpg" alt="Hero Image" className="w-full h-full object-cover object-right" />
