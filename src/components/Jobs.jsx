@@ -36,15 +36,35 @@ const Jobs = () => {
       bgColor: 'bg-primary-orange',
       textColor: 'text-[#451B09]',
       postedDate: '29/08/2023'
+    },
+    {
+      id: 4,
+      title: 'Backend Engineer',
+      language: 'Python',
+      location: 'Aberdeen',
+      salary: '£50,000',
+      description: 'Odio mi amet commodo convallis nunc. Tincidunt mauris eu egestas eget in aliquam.',
+      bgColor: 'bg-green-700',
+      textColor: 'text-white',
+      postedDate: '29/09/2023'
     }
   ];
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % jobs.length);
+    setCurrentSlide((prev) => Math.min(prev + 1, jobs.length - 3));
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + jobs.length) % jobs.length);
+    setCurrentSlide((prev) => Math.max(prev - 1, 0));
+  };
+
+  // Get 3 jobs starting from currentSlide
+  const getVisibleJobs = () => {
+    const visibleJobs = [];
+    for (let i = 0; i < 3; i++) {
+      visibleJobs.push(jobs[(currentSlide + i) % jobs.length]);
+    }
+    return visibleJobs;
   };
 
   return (
@@ -57,7 +77,7 @@ const Jobs = () => {
 
         {/* Jobs Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {jobs.map((job, index) => (
+          {getVisibleJobs().map((job, index) => (
             <div
               key={job.id}
               className={`${job.bgColor} ${job.textColor} rounded-[30px] p-8 shadow-lg hover:shadow-xl transition-shadow duration-300`}
@@ -115,15 +135,37 @@ const Jobs = () => {
           <div className="flex space-x-2">
             <button
               onClick={prevSlide}
-              className="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center transition-colors duration-200"
+              disabled={currentSlide === 0}
+              className={`w-12 h-12 rounded-full flex items-center justify-center transition-colors duration-200 ${
+                currentSlide === 0 
+                  ? 'bg-gray-200 cursor-not-allowed' 
+                  : 'bg-gray-300 hover:bg-gray-400'
+              }`}
               >
-                <img src="/assets/arrow.svg" alt="Arrow" className="w-10 h-10 scale-x-[-1] opacity-50" />
+                <img 
+                  src="/assets/arrow.svg" 
+                  alt="Arrow" 
+                  className={`w-10 h-10 scale-x-[-1] ${
+                    currentSlide === 0 ? 'opacity-30' : 'opacity-100'
+                  }`} 
+                />
             </button>
             <button
               onClick={nextSlide}
-              className="w-12 h-12 rounded-full hover:bg-primary-blue flex items-center justify-center transition-colors duration-200"
+              disabled={currentSlide >= jobs.length - 3}
+              className={`w-12 h-12 rounded-full flex items-center justify-center transition-colors duration-200 ${
+                currentSlide >= jobs.length - 3
+                  ? 'bg-gray-200 cursor-not-allowed'
+                  : 'bg-gray-300 hover:bg-primary-blue'
+              }`}
             >
-              <img src="/assets/arrow.svg" alt="Arrow" className="w-10 h-10" />
+              <img 
+                src="/assets/arrow.svg" 
+                alt="Arrow" 
+                className={`w-10 h-10 ${
+                  currentSlide >= jobs.length - 3 ? 'opacity-30' : 'opacity-100'
+                }`} 
+              />
             </button>
           </div>
 
