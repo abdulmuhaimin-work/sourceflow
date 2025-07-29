@@ -11,8 +11,8 @@ const Jobs = () => {
       location: 'London',
       salary: '£65,000',
       description: 'Odio mi amet commodo convallis nunc. Tincidunt mauris eu egestas eget in aliquam.',
-      bgColor: 'bg-yellow-400',
-      textColor: 'text-gray-900',
+      bgColor: 'bg-primary-yellow',
+      textColor: 'text-primary-blue',
       postedDate: '29/08/2023'
     },
     {
@@ -34,7 +34,7 @@ const Jobs = () => {
       salary: '£65,000',
       description: 'Odio mi amet commodo convallis nunc. Tincidunt mauris eu egestas eget in aliquam.',
       bgColor: 'bg-primary-orange',
-      textColor: 'text-white',
+      textColor: 'text-[#451B09]',
       postedDate: '29/08/2023'
     }
   ];
@@ -48,11 +48,11 @@ const Jobs = () => {
   };
 
   return (
-    <section className="bg-blue-50 py-20">
+    <section className="bg-[#D7E7FB] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900">Latest Jobs</h2>
+        <div className="text-center mb-8">
+          <h2 className="text-[56px] font-bold text-gray-900">Latest Jobs</h2>
         </div>
 
         {/* Jobs Grid */}
@@ -60,50 +60,51 @@ const Jobs = () => {
           {jobs.map((job, index) => (
             <div
               key={job.id}
-              className={`${job.bgColor} ${job.textColor} rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300`}
+              className={`${job.bgColor} ${job.textColor} rounded-[30px] p-8 shadow-lg hover:shadow-xl transition-shadow duration-300`}
             >
               {/* Language Tag */}
               <div className="flex items-center mb-6">
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-white/20 backdrop-blur-sm">
-                  <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+                <span className="inline-flex items-center px-1 py-[2px] rounded-[5px] text-[14px]  bg-white backdrop-blur-sm  text-primary-blue">
+                  <img 
+                    src="/assets/python.png" 
+                    alt="Python" 
+                    className="w-5 h-5 mr-1 object-contain"
+                  />
                   {job.language}
                 </span>
               </div>
 
               {/* Job Title */}
-              <h3 className="text-2xl font-bold mb-4">{job.title}</h3>
+              <h3 className="text-[30px] font-bold mb-5 tracking-[-1px]">{job.title}</h3>
 
               {/* Location and Salary */}
               <div className="space-y-2 mb-6">
                 <div className="flex items-center">
-                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                   </svg>
-                  <span className="font-medium">{job.location}</span>
+                  <span className="text-[16px] leading-[150%] font-light">{job.location}</span>
                 </div>
                 <div className="flex items-center">
-                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                  </svg>
-                  <span className="font-bold text-lg">{job.salary}</span>
+                    <svg className="w-6 h-6 mr-2" viewBox="0 0 25 25" fill="currentColor">
+                     <path d="M3.5 6.46667H21.5V18.4667H3.5V6.46667ZM12.5 9.46667C13.2956 9.46667 14.0587 9.78274 14.6213 10.3454C15.1839 10.908 15.5 11.671 15.5 12.4667C15.5 13.2623 15.1839 14.0254 14.6213 14.588C14.0587 15.1506 13.2956 15.4667 12.5 15.4667C11.7044 15.4667 10.9413 15.1506 10.3787 14.588C9.81607 14.0254 9.5 13.2623 9.5 12.4667C9.5 11.671 9.81607 10.908 10.3787 10.3454C10.9413 9.78274 11.7044 9.46667 12.5 9.46667ZM7.5 8.46667C7.5 8.99711 7.28929 9.50582 6.91421 9.88089C6.53914 10.256 6.03043 10.4667 5.5 10.4667V14.4667C6.03043 14.4667 6.53914 14.6774 6.91421 15.0525C7.28929 15.4275 7.5 15.9362 7.5 16.4667H17.5C17.5 15.9362 17.7107 15.4275 18.0858 15.0525C18.4609 14.6774 18.9696 14.4667 19.5 14.4667V10.4667C18.9696 10.4667 18.4609 10.256 18.0858 9.88089C17.7107 9.50582 17.5 8.99711 17.5 8.46667H7.5Z"/>
+                   </svg>
+                  <span className="text-[16px] leading-[150%] font-light">{job.salary}</span>
                 </div>
               </div>
 
               {/* Description */}
-              <p className="text-sm opacity-90 mb-6 leading-relaxed">
+              <p className="text-[16px] leading-[150%] mb-6 leading-[150%] font-light">
                 {job.description}
               </p>
 
               {/* View Job Button */}
-              <button className="w-full bg-white/20 hover:bg-white/30 backdrop-blur-sm text-current font-semibold py-3 px-6 rounded-lg transition-all duration-200 border border-white/30">
+              <button className="w-full bg-white hover:bg-white/30 backdrop-blur-sm text-primary-blue font-[500] py-4 px-8 rounded-[30px] transition-all duration-200 border border-white/30">
                 View this job
               </button>
 
               {/* Posted Date */}
-              <p className="text-xs opacity-70 mt-4">Posted on {job.postedDate}</p>
+              <p className="text-[13px] opacity-70 mt-4">Posted on {job.postedDate}</p>
             </div>
           ))}
         </div>
@@ -114,28 +115,21 @@ const Jobs = () => {
           <div className="flex space-x-2">
             <button
               onClick={prevSlide}
-              className="w-12 h-12 rounded-full bg-gray-300 hover:bg-gray-400 flex items-center justify-center transition-colors duration-200"
-            >
-              <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
+              className="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center transition-colors duration-200"
+              >
+                <img src="/assets/arrow.svg" alt="Arrow" className="w-10 h-10 scale-x-[-1] opacity-50" />
             </button>
             <button
               onClick={nextSlide}
-              className="w-12 h-12 rounded-full bg-gray-800 hover:bg-gray-900 flex items-center justify-center transition-colors duration-200"
+              className="w-12 h-12 rounded-full hover:bg-primary-blue flex items-center justify-center transition-colors duration-200"
             >
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
+              <img src="/assets/arrow.svg" alt="Arrow" className="w-10 h-10" />
             </button>
           </div>
 
           {/* View More Link */}
-          <button className="text-gray-700 hover:text-primary-blue font-medium flex items-center transition-colors duration-200">
+          <button className="text-[#0E2152] mx-4 text-[16px] leading-[150%] hover:text-primary-blue font-[500] flex items-center transition-colors duration-200">
             View more jobs
-            <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
           </button>
         </div>
       </div>
