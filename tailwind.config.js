@@ -7,17 +7,14 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          blue: '#1e4c96',
-          orange: '#ff7a59',
-          yellow: '#ffd700',
+          blue: '#064EA4',
+          orange: '#F99D76',
+          yellow: '#FCDF69',
         }
       },
       fontFamily: {
         'helvetica': ['Helvetica Neue', 'Helvetica', 'Inter', 'Arial', 'sans-serif'],
       },
-      letterSpacing: {
-        DEFAULT: '-1px',
-      }
     },
   },
   plugins: [],
