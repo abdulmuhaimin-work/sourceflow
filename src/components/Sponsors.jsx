@@ -12,7 +12,7 @@ const Sponsors = () => {
   const LogoPlaceholder = ({ name, color }) => (
     <div className="flex items-center justify-center p-4 group hover:scale-105 transition-transform duration-200">
               <img 
-          src={`/assets/${name}`} 
+          src={`${process.env.PUBLIC_URL}/assets/${name}`} 
           alt={name.replace('.png', '')} 
           className="h-12 w-auto opacity-80 group-hover:opacity-100 transition-opacity filter object-contain" 
         />

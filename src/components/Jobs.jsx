@@ -86,7 +86,7 @@ const Jobs = () => {
               <div className="flex items-center mb-6">
                 <span className="inline-flex items-center px-1 py-[2px] rounded-[5px] text-[14px]  bg-white backdrop-blur-sm  text-primary-blue">
                   <img 
-                    src="/assets/python.png" 
+                    src={`${process.env.PUBLIC_URL}/assets/python.png`} 
                     alt="Python" 
                     className="w-5 h-5 mr-1 object-contain"
                   />
@@ -141,14 +141,14 @@ const Jobs = () => {
                   ? 'bg-gray-200 cursor-not-allowed' 
                   : 'bg-gray-300 hover:bg-gray-400'
               }`}
-              >
-                <img 
-                  src="/assets/arrow.svg" 
-                  alt="Arrow" 
-                  className={`w-10 h-10 scale-x-[-1] ${
-                    currentSlide === 0 ? 'opacity-30' : 'opacity-100'
-                  }`} 
-                />
+                          >
+              <img 
+                src={`${process.env.PUBLIC_URL}/assets/arrow.svg`} 
+                alt="Arrow" 
+                className={`w-10 h-10 scale-x-[-1] ${
+                  currentSlide === 0 ? 'opacity-30' : 'opacity-100'
+                }`} 
+              />
             </button>
             <button
               onClick={nextSlide}
@@ -160,7 +160,7 @@ const Jobs = () => {
               }`}
             >
               <img 
-                src="/assets/arrow.svg" 
+                src={`${process.env.PUBLIC_URL}/assets/arrow.svg`} 
                 alt="Arrow" 
                 className={`w-10 h-10 ${
                   currentSlide >= jobs.length - 3 ? 'opacity-30' : 'opacity-100'

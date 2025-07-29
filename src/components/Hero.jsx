@@ -47,7 +47,7 @@ const Hero = () => {
             <div className="px-8 w-[100%] h-full">
               <div className="relative h-full mt-14 lg:mt-0">
                                  <div className="w-full aspect-square rounded-2xl overflow-hidden">
-                   <img src="/assets/office-lady.jpg" alt="Professional woman in office setting" className="w-full h-full object-cover object-right" />
+                   <img src={`${process.env.PUBLIC_URL}/assets/office-lady.jpg`} alt="Professional woman in office setting" className="w-full h-full object-cover object-right" />
                 </div>
               </div>
             </div>
