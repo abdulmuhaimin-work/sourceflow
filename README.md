@@ -15,6 +15,12 @@ A modern, responsive homepage for a software recruitment company built with Reac
 ```
 sourceflow/
 ├── public/
+│   ├── assets/
+│   │   ├── arrow.svg
+│   │   ├── office-lady.jpg
+│   │   └── company logos (Atlassian.png, Microsoft.png, etc.)
+│   ├── font/
+│   │   └── HelveticaNeue font files
 │   └── index.html
 ├── src/
 │   ├── components/
@@ -23,9 +29,12 @@ sourceflow/
 │   │   ├── Sponsors.jsx
 │   │   ├── Jobs.jsx
 │   │   └── Footer.jsx
+│   ├── fonts/
+│   │   └── HelveticaNeue font files
 │   ├── App.jsx
 │   ├── index.js
-│   └── index.css
+│   ├── index.css
+│   └── fonts.css
 ├── tailwind.config.js
 ├── postcss.config.js
 ├── package.json
@@ -62,13 +71,28 @@ sourceflow/
 - **React 18**: Modern React with hooks and functional components
 - **Tailwind CSS**: Utility-first CSS framework
 - **PostCSS**: CSS processing tool
-- **Inter Font**: Modern typography
+- **Helvetica Neue**: Primary typography with Inter fallback
+
+## Assets Included
+
+- **Company Logos**: Atlassian, Microsoft, Oracle, VMware, Cloudflare
+- **Icons**: Arrow SVG, cash icon, Python logo
+- **Images**: Professional office imagery
+- **Fonts**: Complete Helvetica Neue font family (multiple weights and styles)
 
 ## Color Scheme
 
-- **Primary Blue**: `#1e4c96` - Main branding color
-- **Primary Orange**: `#ff7a59` - Accent color for CTAs
-- **Primary Yellow**: `#ffd700` - Secondary accent color
+- **Primary Blue**: `#064EA4` - Main branding color
+- **Primary Orange**: `#F99D76` - Accent color for CTAs
+- **Primary Yellow**: `#FCDF69` - Secondary accent color
+
+## Typography
+
+The project uses a carefully curated font stack:
+- **Primary**: Helvetica Neue (locally hosted)
+- **Fallback**: Inter (Google Fonts), Helvetica, Arial, sans-serif
+- **Weights Available**: Light (300), Normal (400), Medium (500), Bold (700)
+- **Font Loading**: Optimized with `font-display: swap` for better performance
 
 ## Responsive Breakpoints
 
