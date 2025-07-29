@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/sourceflow/static/css/main.b3ae5069.css",
+    "main.js": "/sourceflow/static/js/main.d3ae5520.js",
+    "static/media/HelveticaNeueRoman.otf": "/sourceflow/static/media/HelveticaNeueRoman.ddb209473d7df560da50.otf",
+    "static/media/HelveticaNeueBold.otf": "/sourceflow/static/media/HelveticaNeueBold.1baa6c20d3e22be14c0a.otf",
+    "static/media/HelveticaNeueLight.otf": "/sourceflow/static/media/HelveticaNeueLight.a7c3c98319c1341d5aa5.otf",
+    "static/media/HelveticaNeueMedium.otf": "/sourceflow/static/media/HelveticaNeueMedium.38884ffafe8888205009.otf",
+    "index.html": "/sourceflow/index.html",
+    "main.b3ae5069.css.map": "/sourceflow/static/css/main.b3ae5069.css.map",
+    "main.d3ae5520.js.map": "/sourceflow/static/js/main.d3ae5520.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3ae5069.css",
+    "static/js/main.d3ae5520.js"
+  ]
+}
