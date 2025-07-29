@@ -86,10 +86,10 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-100">
-              <a href="#" className="text-gray-700 hover:text-primary-blue block px-3 py-2 text-base font-medium">For jobseekers</a>
-              <a href="#" className="text-gray-700 hover:text-primary-blue block px-3 py-2 text-base font-medium">For clients</a>
-              <a href="#" className="text-gray-700 hover:text-primary-blue block px-3 py-2 text-base font-medium">Sectors</a>
-              <a href="#" className="text-gray-700 hover:text-primary-blue block px-3 py-2 text-base font-medium">Resources</a>
+              <button className="text-gray-700 hover:text-primary-blue block px-3 py-2 text-base font-medium text-left w-full">For jobseekers</button>
+              <button className="text-gray-700 hover:text-primary-blue block px-3 py-2 text-base font-medium text-left w-full">For clients</button>
+              <button className="text-gray-700 hover:text-primary-blue block px-3 py-2 text-base font-medium text-left w-full">Sectors</button>
+              <button className="text-gray-700 hover:text-primary-blue block px-3 py-2 text-base font-medium text-left w-full">Resources</button>
               <div className="flex flex-col space-y-2 pt-4">
                 <button className="btn-secondary px-5 py-3 rounded-[30px]">Upload CV</button>
                 <button className="btn-primary px-5 py-3 rounded-[30px]">Contact us</button>

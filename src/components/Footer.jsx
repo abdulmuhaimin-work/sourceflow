@@ -38,34 +38,34 @@ const Footer = () => {
             <h4 className="text-[33px] font-bold mb-6">Explore</h4>
             <ul className="space-y-5">
               <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors duration-200">
+                <button className="text-blue-200 hover:text-white transition-colors duration-200 text-left">
                   Homepage
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors duration-200">
+                <button className="text-blue-200 hover:text-white transition-colors duration-200 text-left">
                   For jobseekers
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors duration-200">
+                <button className="text-blue-200 hover:text-white transition-colors duration-200 text-left">
                   For clients
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors duration-200">
+                <button className="text-blue-200 hover:text-white transition-colors duration-200 text-left">
                   Our sectors
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors duration-200">
+                <button className="text-blue-200 hover:text-white transition-colors duration-200 text-left">
                   Resources
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors duration-200">
+                <button className="text-blue-200 hover:text-white transition-colors duration-200 text-left">
                   Contact us
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -74,34 +74,34 @@ const Footer = () => {
             <h4 className="text-[33px] font-bold mb-6">Sectors</h4>
             <ul className="space-y-5">
               <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors duration-200">
+                <button className="text-blue-200 hover:text-white transition-colors duration-200 text-left">
                   Software engineering
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors duration-200">
+                <button className="text-blue-200 hover:text-white transition-colors duration-200 text-left">
                   DevOps
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors duration-200">
+                <button className="text-blue-200 hover:text-white transition-colors duration-200 text-left">
                   Cloud
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors duration-200">
+                <button className="text-blue-200 hover:text-white transition-colors duration-200 text-left">
                   Infrastructure
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors duration-200">
+                <button className="text-blue-200 hover:text-white transition-colors duration-200 text-left">
                   Testing
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors duration-200">
+                <button className="text-blue-200 hover:text-white transition-colors duration-200 text-left">
                   Security
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -110,29 +110,29 @@ const Footer = () => {
             <h4 className="text-[33px] font-bold mb-6">Services</h4>
             <ul className="space-y-5">
               <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors duration-200">
+                <button className="text-blue-200 hover:text-white transition-colors duration-200 text-left">
                   Nav Item
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors duration-200">
+                <button className="text-blue-200 hover:text-white transition-colors duration-200 text-left">
                   Nav Item
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors duration-200">
+                <button className="text-blue-200 hover:text-white transition-colors duration-200 text-left">
                   Nav Item
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors duration-200">
+                <button className="text-blue-200 hover:text-white transition-colors duration-200 text-left">
                   Nav Item
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors duration-200">
+                <button className="text-blue-200 hover:text-white transition-colors duration-200 text-left">
                   Nav Item
-                </a>
+                </button>
               </li>
             </ul>
           </div>
